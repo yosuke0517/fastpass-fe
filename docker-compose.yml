@@ -17,9 +17,9 @@ services:
   front:
     container_name: front
     build:
-      context: ..
+      context: .
       target: dev-runner
-      dockerfile: ../.docker/front/Dockerfile
+      dockerfile: .docker/front/Dockerfile
     tty: true
     volumes:
       - ./src:/app
