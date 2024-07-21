@@ -5,7 +5,7 @@ export default {
 
         commands.push(`eslint ${lintTargetFiles}`)
         commands.push(`prettier --check ${lintTargetFiles}`)
-        commands.push(`cspell -c ../../cspell.json ${lintTargetFiles}`)
+        commands.push(`cspell -c ./cspell.json ${lintTargetFiles}`)
 
         return commands
     },
