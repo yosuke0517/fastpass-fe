@@ -9,7 +9,7 @@ RUN apt-get update && \
     # DockleのCRITICAL対策
     rm -rf /var/lib/apt/lists
 
-COPY ./src/ /app
+COPY ./ /app
 
 FROM node:20.15.1-bullseye-slim AS base
 
@@ -24,7 +24,7 @@ RUN apt-get update && \
     # DockleのCRITICAL対策
     rm -rf /var/lib/apt/lists
 
-COPY ./src .
+COPY ./ .
 RUN yarn --frozen-lockfile && \
     yarn build
 

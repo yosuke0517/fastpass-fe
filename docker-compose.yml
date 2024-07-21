@@ -22,7 +22,7 @@ services:
       dockerfile: .docker/front/Dockerfile
     tty: true
     volumes:
-      - ./src:/app
+      - ./:/app
     environment:
       - WATCHPACK_POLLING=true
     ports:
