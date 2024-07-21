@@ -1,0 +1,41 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "abema",
+    "authed",
+    "autosize",
+    "dropzone",
+    "firebase",
+    "firestore",
+    "flatMap",
+    "hokuriku",
+    "hookform",
+    "kaku",
+    "kantou",
+    "koushinetsu",
+    "mantine",
+    "millis",
+    "Navigations",
+    "nextjs",
+    "recaptcha",
+    "scroller",
+    "signup",
+    "smds",
+    "Subcollection",
+    "tokai",
+    "touhoku",
+    "vercel",
+    "webp",
+    "algoliasearch"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    ".next",
+    "public",
+    "*.js",
+    "*.log",
+    ".turbo",
+    ".git"
+  ]
+}
