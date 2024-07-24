@@ -1,4 +1,5 @@
-FROM node:20.15.1-bullseye-slim AS dev
+# 開発環境
+FROM node:19.9.0-bullseye-slim AS dev
 
 WORKDIR /app
 
@@ -9,10 +10,12 @@ RUN apt-get update && \
     # DockleのCRITICAL対策
     rm -rf /var/lib/apt/lists
 
-COPY ./ /app
+COPY ./src/ /app
 
-FROM node:20.15.1-bullseye-slim AS base
+# ベースイメージ
+FROM node:19.9.0-bullseye-slim AS base
 
+# ビルド環境
 FROM base AS builder
 
 WORKDIR /app
@@ -20,14 +23,15 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get autoremove -y && \
     # Yarnのバージョンを上げる
-    yarn set version berry  && \
+    yarn set version berry && \
     # DockleのCRITICAL対策
     rm -rf /var/lib/apt/lists
 
-COPY ./ .
+COPY ./src .
 RUN yarn --frozen-lockfile && \
     yarn build
 
+# 実行環境
 FROM builder AS runner
 WORKDIR /app
 

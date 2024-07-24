@@ -22,11 +22,12 @@ services:
       dockerfile: .docker/front/Dockerfile
     tty: true
     volumes:
-      - ./:/app
+      - ./src/:/app
     environment:
-      - WATCHPACK_POLLING=true
+    # ホットリロード対応
+     - WATCHPACK_POLLING=true
     ports:
-      - "3000:3000"
+    - "3000:3000"
     networks:
       fastpass-web:
         ipv4_address: 172.30.0.10
