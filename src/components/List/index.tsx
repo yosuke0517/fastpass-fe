@@ -1,8 +1,8 @@
+import { useRouter } from 'next/router';
+import React from 'react';
 import { useUserState } from '@/atoms/userAtom';
 import { Presenter } from '@/components/List/presenter';
 import { useGetMessages } from '@/components/List/useGetMessages';
-import { useRouter } from 'next/router';
-import React from 'react';
 
 export function List() {
   const { setUser } = useUserState();

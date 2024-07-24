@@ -1,7 +1,7 @@
-import styles from './index.module.scss';
-import { Create } from '@/types/form';
 import { NextRouter } from 'next/router';
 import { FieldErrors, SubmitHandler, UseFormHandleSubmit, UseFormRegister } from 'react-hook-form';
+import styles from './index.module.scss';
+import { Create } from '@/types/form';
 
 type Props = {
   handleSubmit: UseFormHandleSubmit<Create>;

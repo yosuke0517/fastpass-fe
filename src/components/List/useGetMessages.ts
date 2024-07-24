@@ -1,7 +1,7 @@
-import { client } from '@/graphql/client';
-import { query } from '@/graphql/document';
 import { useQuery } from '@tanstack/react-query';
 import { useCookies } from 'react-cookie';
+import { client } from '@/graphql/client';
+import { query } from '@/graphql/document';
 
 export const useGetMessages = () => {
   const [cookies] = useCookies(['_csrf']);

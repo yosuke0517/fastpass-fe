@@ -1,7 +1,7 @@
-import styles from './index.module.scss';
-import { GetMessagesQueryDocumentQuery } from '@/graphql/generated/graphql';
 import { NextRouter } from 'next/router';
 import { BiUser } from 'react-icons/bi';
+import styles from './index.module.scss';
+import { GetMessagesQueryDocumentQuery } from '@/graphql/generated/graphql';
 
 type Props = {
   data: GetMessagesQueryDocumentQuery;
