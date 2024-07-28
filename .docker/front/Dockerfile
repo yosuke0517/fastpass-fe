@@ -28,7 +28,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists
 
 COPY ./src .
-RUN yarn --frozen-lockfile && \
+RUN yarn --immutable && \
     yarn build
 
 # 実行環境
