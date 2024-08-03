@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { useUserState } from '@/atoms/userAtom';
-import { Presenter } from '@/components/Post/presenter';
-import { useCreateMessages } from '@/components/Post/useCreateMessages';
-import { Create } from '@/types/form';
+import { useUserState } from '~/components/userAtom';
+import { Presenter } from '~/features/Post/presenter';
+import { useCreateMessages } from '~/features/Post/useCreateMessages';
+import { Create } from '~/types/form';
 
 export function Post() {
   const router = useRouter();

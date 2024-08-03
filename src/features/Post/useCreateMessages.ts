@@ -1,9 +1,9 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { useRouter } from 'next/router';
 import { useCookies } from 'react-cookie';
-import { client } from '@/graphql/client';
-import { create } from '@/graphql/document';
-import { Create } from '@/types/form';
+import { client } from '~/graphql/client';
+import { create } from '~/graphql/document';
+import { Create } from '~/types/form';
 
 export const useCreateMessages = () => {
   const router = useRouter();

@@ -4,8 +4,8 @@ import { render, screen } from '@testing-library/react';
 import { graphql } from 'msw';
 import { setupServer } from 'msw/node';
 import { RecoilRoot } from 'recoil';
-import { List } from '@/components/List';
-import { GetMessagesQueryDocumentQuery } from '@/graphql/generated/graphql';
+import { List } from '~/features/List';
+import { GetMessagesQueryDocumentQuery } from '~/graphql/generated/graphql';
 
 // 対策： NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
 jest.mock('next/router', () => ({
