@@ -1,7 +1,7 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { Presenter } from '@/components/Login/presenter';
-import { useLogin } from '@/components/Login/useLogin';
-import { Login } from '@/types/form';
+import { Presenter } from '~/features/Login/presenter';
+import { useLogin } from '~/features/Login/useLogin';
+import { Login } from '~/types/form';
 
 export function Login() {
   const {

@@ -1,4 +1,4 @@
-import { graphql } from '@/graphql/generated/gql';
+import { graphql } from '~/graphql/generated/gql';
 
 export const query = graphql(/* GraphQL */ `
   query getMessagesQueryDocument {

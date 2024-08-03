@@ -1,7 +1,7 @@
 import React from 'react';
-import { Layout } from '@/components/Layout';
-import { Post } from '@/components/Post';
-import type { NextPageWithLayout } from '@/pages/_app';
+import { Layout } from '~/features/Layout';
+import { Post } from '~/features/Post';
+import type { NextPageWithLayout } from '~/pages/_app';
 
 const Page: NextPageWithLayout = () => {
   return (

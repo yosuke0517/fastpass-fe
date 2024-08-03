@@ -1,17 +1,17 @@
 import React from 'react';
-import { Layout } from '@/components/Layout';
-import type { NextPageWithLayout } from '@/pages/_app';
+import type { NextPageWithLayout } from '~/pages/_app';
 
 const Page: NextPageWithLayout = () => {
   return (
     <>
-      <p>agent</p>
+      <p>todo</p>
     </>
   );
 };
 
 Page.getLayout = function getLayout(page) {
-  return <Layout>{page}</Layout>;
+  // TODO ここでLayoutコンポーネントを返す
+  return <div>{page}</div>;
 };
 
 export default Page;

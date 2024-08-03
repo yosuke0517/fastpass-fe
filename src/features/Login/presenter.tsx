@@ -1,6 +1,6 @@
 import { FieldErrors, SubmitHandler, UseFormHandleSubmit, UseFormRegister } from 'react-hook-form';
 import styles from './index.module.scss';
-import { Login } from '@/types/form';
+import { Login } from '~/types/form';
 
 type Props = {
   handleSubmit: UseFormHandleSubmit<Login>;

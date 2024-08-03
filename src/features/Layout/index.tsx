@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
-import { Presenter } from '@/components/Layout/presenter';
-import useLogout from '@/components/Layout/useLogout';
+import { Presenter } from '~/features/Layout/presenter';
+import useLogout from '~/features/Layout/useLogout';
 
 type LayoutProps = {
   children: ReactNode;
