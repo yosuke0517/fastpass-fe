@@ -15,14 +15,7 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./*"],
-      "@/atoms/*": ["./atoms/*"],
-      "@/components/*": ["./components/*"],
-      "@/graphql/*": ["./graphql/*"],
-      "@/hooks/*": ["./hooks/*"],
-      "@/pages/*": ["./pages/*"],
-      "@/styles/*": ["./styles/*"],
-      "@/types/*": ["./types/*"]
+      "~/*": ["./*"]
     }
   },
   "include": ["src/next-env.d.ts", "**/*.ts", "**/*.tsx"],

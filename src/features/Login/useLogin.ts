@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router';
 import { useCallback, useEffect, useMemo } from 'react';
 import { useCookies } from 'react-cookie';
-import { useUserState } from '@/atoms/userAtom';
-import { useSetCsrf } from '@/components/Login/useSetCsrf';
-import { Login } from '@/types/form';
+import { useUserState } from '~/components/userAtom';
+import { useSetCsrf } from '~/features/Login/useSetCsrf';
+import { Login } from '~/types/form';
 
 export const useLogin = () => {
   const { setUser } = useUserState();
