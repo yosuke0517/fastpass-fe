@@ -26,7 +26,6 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
           <Component {...pageProps} />
         </QueryClientProvider>
       </RecoilRoot>
-      ,
     </CookiesProvider>,
   );
 }

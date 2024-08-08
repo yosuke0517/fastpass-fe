@@ -1,10 +1,14 @@
 import React from 'react';
+import { ReactTinderCard } from '~/components/ReactTinderCard';
 import type { NextPageWithLayout } from '~/pages/_app';
 
 const Page: NextPageWithLayout = () => {
   return (
     <>
-      <p>todo</p>
+      <div>
+        <h2>上にスワイプしてくださいな</h2>
+        <ReactTinderCard />
+      </div>
     </>
   );
 };
