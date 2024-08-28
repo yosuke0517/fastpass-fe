@@ -2207,70 +2207,69 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-spring/animated@npm:~9.5.5":
-  version: 9.5.5
-  resolution: "@react-spring/animated@npm:9.5.5"
+"@react-spring/animated@npm:~9.7.4":
+  version: 9.7.4
+  resolution: "@react-spring/animated@npm:9.7.4"
   dependencies:
-    "@react-spring/shared": "npm:~9.5.5"
-    "@react-spring/types": "npm:~9.5.5"
+    "@react-spring/shared": "npm:~9.7.4"
+    "@react-spring/types": "npm:~9.7.4"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/f7c68d5685365e4ddb6112c3e8e31f6104825f487fdebd5ff8c16e047e5ff2b8570b1cf1585a68b1bd679324dfb56ae5421da17341a04b3c79951d3f35f26cbd
+  checksum: 10c0/7620fe7f058ca81d321710dd391062eda8bd298d2abdf63c5e230348aecd1b80730e5b96bdf052807838a20c8961efe1f9e2840e6cce3cacae5b74a28622eff8
   languageName: node
   linkType: hard
 
-"@react-spring/core@npm:~9.5.5":
-  version: 9.5.5
-  resolution: "@react-spring/core@npm:9.5.5"
+"@react-spring/core@npm:~9.7.4":
+  version: 9.7.4
+  resolution: "@react-spring/core@npm:9.7.4"
   dependencies:
-    "@react-spring/animated": "npm:~9.5.5"
-    "@react-spring/rafz": "npm:~9.5.5"
-    "@react-spring/shared": "npm:~9.5.5"
-    "@react-spring/types": "npm:~9.5.5"
+    "@react-spring/animated": "npm:~9.7.4"
+    "@react-spring/shared": "npm:~9.7.4"
+    "@react-spring/types": "npm:~9.7.4"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/fe40f99e6de261391c2bf0ca56eeac071c0e1b6cf5a145b2acaefc12d076bcadae973bbfa4adf2171240268884befd2d7f4cb3cd5be4dd8106a3dd6179e059b4
+  checksum: 10c0/cdbc5e222edc5f25746cad36086acf20563157543557a3436b55bf0527460f68e5eb98e2927e186937eba37abe3067c227b685c07b9dc393f987a8ff7abe2455
   languageName: node
   linkType: hard
 
-"@react-spring/rafz@npm:~9.5.5":
-  version: 9.5.5
-  resolution: "@react-spring/rafz@npm:9.5.5"
-  checksum: 10c0/a0e05c8bd2bee5996c12985dd502e05378ae46044fd09279f726bd10cd0d5037017f15040c4c171fb04a6cd31c90c4f61605629e5b09566765b0edafce091b7c
+"@react-spring/rafz@npm:~9.7.4":
+  version: 9.7.4
+  resolution: "@react-spring/rafz@npm:9.7.4"
+  checksum: 10c0/975e27d6c19ed055dea91e97e473831a862aad2dc882f5402e98ac1f3f636f4ec05ee5cff623e5f6ece25388bb50a024bbc6dcdb6b750e43d53f0321140c5e52
   languageName: node
   linkType: hard
 
-"@react-spring/shared@npm:~9.5.5":
-  version: 9.5.5
-  resolution: "@react-spring/shared@npm:9.5.5"
+"@react-spring/shared@npm:~9.7.4":
+  version: 9.7.4
+  resolution: "@react-spring/shared@npm:9.7.4"
   dependencies:
-    "@react-spring/rafz": "npm:~9.5.5"
-    "@react-spring/types": "npm:~9.5.5"
+    "@react-spring/rafz": "npm:~9.7.4"
+    "@react-spring/types": "npm:~9.7.4"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/5df013703b90eead6740f25b28599356b57a4f2a0002ff1ca7beaed581076c88d926f84c52de800052ee2ecfef870f51fced8fc0035b57312c6e0a28418b029e
+  checksum: 10c0/ae5cbb41f4876ebf365e0b2293466678d421eb68e736bfb4a0836a550518eb916fee763274f81c5af8a6a25f776df1480031e39f2981639aa79ac6cb6d290a15
   languageName: node
   linkType: hard
 
-"@react-spring/types@npm:~9.5.5":
-  version: 9.5.5
-  resolution: "@react-spring/types@npm:9.5.5"
-  checksum: 10c0/2bd314101f6d79f23816e87992ef442acc1dd86323a10ba5e613741090e6e096ee854e25a442c750dc7ea9b3954d1e945263c550d3bb4ac23588c9ec1d23c5da
+"@react-spring/types@npm:~9.7.4":
+  version: 9.7.4
+  resolution: "@react-spring/types@npm:9.7.4"
+  checksum: 10c0/2ad43c0463dadb8caa58a7eeafc9ba447fa66cd7d9b9ea2241d58c619353155ea94d7e6a89fc6da0f071d500216c654b35a64a12a3a586d85e304ed6c93546fd
   languageName: node
   linkType: hard
 
-"@react-spring/web@npm:9.5.5":
-  version: 9.5.5
-  resolution: "@react-spring/web@npm:9.5.5"
+"@react-spring/web@npm:9.7.4":
+  version: 9.7.4
+  resolution: "@react-spring/web@npm:9.7.4"
   dependencies:
-    "@react-spring/animated": "npm:~9.5.5"
-    "@react-spring/core": "npm:~9.5.5"
-    "@react-spring/shared": "npm:~9.5.5"
-    "@react-spring/types": "npm:~9.5.5"
+    "@react-spring/animated": "npm:~9.7.4"
+    "@react-spring/core": "npm:~9.7.4"
+    "@react-spring/shared": "npm:~9.7.4"
+    "@react-spring/types": "npm:~9.7.4"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/01db4ad68305fbada3735c44a7972a3a8dcff630758bfbe75e48dffc27cf77c303f598f2be176b66d6bf4e61f66a38e64e007859e5fd369e662f829d26839499
+  checksum: 10c0/6312b612e53ae7a7cd0ab5fe16aaccbc6fba5d71248e30373a1f46e6aec997723095eff3c1a47f59aa8d5788b7092a898dee2120f841814f1d1295e5a4fcf5fb
   languageName: node
   linkType: hard
 
@@ -8999,7 +8998,7 @@ __metadata:
     "@graphql-codegen/cli": "npm:^3.2.2"
     "@graphql-codegen/client-preset": "npm:^2.1.1"
     "@graphql-typed-document-node/core": "npm:^3.2.0"
-    "@react-spring/web": "npm:9.5.5"
+    "@react-spring/web": "npm:9.7.4"
     "@tanstack/react-query": "npm:^4.28.0"
     "@testing-library/jest-dom": "npm:^5.16.5"
     "@testing-library/react": "npm:^14.0.0"
