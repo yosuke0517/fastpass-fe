@@ -1,4 +1,0 @@
-input NewMessage {
-    text: String!
-    userId: String!
-}

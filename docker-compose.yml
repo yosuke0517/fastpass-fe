@@ -20,12 +20,14 @@ services:
       context: .
       target: dev-runner
       dockerfile: .docker/front/Dockerfile
+    command: "node"
     tty: true
     volumes:
-      - ./src/:/app
+      - ./:/app
     environment:
     # ホットリロード対応
      - WATCHPACK_POLLING=true
+     - NODE_ENV=development
     ports:
     - "3000:3000"
     networks:

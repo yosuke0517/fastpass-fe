@@ -1,3 +1,11 @@
+## SETUP
+
+- ネットワーク作成
+```bash
+docker network create --subnet=172.30.0.0/24 fastpass-web
+```
+
+
 ## Build for ECR
 
 ```
