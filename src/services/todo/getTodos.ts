@@ -1,6 +1,5 @@
 import type { IApiResponse } from '@/types/api/common';
 import apiClient from '@/utils/api/apiClient';
-import * as process from 'node:process'
 
 export type Todo = {
   userId: number;
