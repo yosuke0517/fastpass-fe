@@ -1,3 +1,17 @@
+# 開発環境
+FROM node:20.12.2-bullseye-slim AS dev
+
+WORKDIR /app
+
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get autoremove -y && \
+    yarn set version berry && \
+    # DockleのCRITICAL対策
+    rm -rf /var/lib/apt/lists
+
+COPY ./src/ /app
+
 # ベースイメージ
 FROM node:20.12.2-bullseye-slim AS base
 
