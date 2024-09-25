@@ -16,9 +16,9 @@ type TodosResponse = {
  * fetchTodos
  */
 export const fetchTodos = async () => {
-  // TODO 型
+  // TODO 型, proccess.env.API_FRONT_URLで参照できるようにする
   const response = await apiClient.get<IApiResponse<TodosResponse>>(
-    `${process.env.API_FRONT_URL}/api/todo`,
+    `https://front.finegate.xyz/api/todo`,
     // { cache: 'no-store' },
     // コメントアウトしている場合は.next/cache/fetch-cacheにキャッシュされる
   );
