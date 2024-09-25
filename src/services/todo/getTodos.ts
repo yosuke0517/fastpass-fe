@@ -1,5 +1,6 @@
 import type { IApiResponse } from '@/types/api/common';
 import apiClient from '@/utils/api/apiClient';
+import * as process from 'node:process'
 
 export type Todo = {
   userId: number;
@@ -18,7 +19,7 @@ type TodosResponse = {
 export const fetchTodos = async () => {
   // TODO 型
   const response = await apiClient.get<IApiResponse<TodosResponse>>(
-    'http://localhost:3000/api/todo',
+    `${process.env.API_FRONT_URL}/api/todo`,
     // { cache: 'no-store' },
     // コメントアウトしている場合は.next/cache/fetch-cacheにキャッシュされる
   );
