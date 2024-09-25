@@ -37,7 +37,3 @@ $ hadolint --ignore DL3018 .docker/front/Dockerfile
 
 
 # 設計
-
-- pageルーターのため、pagesがルーティングになる
-- pagesはルーティングのみを担当する
-- page内にはそのページに該当するcontainerを配置する

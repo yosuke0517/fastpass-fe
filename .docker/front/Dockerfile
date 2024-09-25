@@ -18,10 +18,18 @@ RUN yarn --immutable && \
     yarn build
 
 # 実行環境
-FROM base AS runner
+FROM builder AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
+
+#RUN groupadd -r nodejs &&  \
+#    useradd -r -u 1001 -g nodejs nextjs
+#
+#COPY --from=builder /app/public ./public
+#COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+#USER nextjs
 
 EXPOSE 3000
 
