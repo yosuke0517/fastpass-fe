@@ -1,0 +1,51 @@
+{
+  "name": "fastpass-fe",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "20.12.2"
+  },
+  "scripts": {
+    "postinstall": "echo 'Running postinstall script' && node .husky/install.mjs",
+    "dev": "next dev",
+    "build": "NODE_ENV=production next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@hookform/resolvers": "^3.9.0",
+    "@mui/material": "^6.0.2",
+    "css-loader": "^7.1.2",
+    "lodash-es": "^4.17.21",
+    "next": "14.2.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.53.0",
+    "style-loader": "^4.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsdoc": "^50.2.2",
+    "eslint-plugin-unused-imports": "^4.1.3",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.9",
+    "postcss": "^8.4.41",
+    "postcss-loader": "^8.1.1",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5"
+  }
+}

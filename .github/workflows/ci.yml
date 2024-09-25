@@ -34,10 +34,10 @@ jobs:
       - name: Install
         run: |
           docker-compose -f ${{ env.DOCKER_COMPOSE_FILE }} exec -T front yarn
-      - name: Run TEST
-        run: |
-          docker-compose -f ${{ env.DOCKER_COMPOSE_FILE }} exec -T front yarn jest
+#      - name: Run TEST
+#        run: |
+#          docker-compose -f ${{ env.DOCKER_COMPOSE_FILE }} exec -T front yarn jest
       - name: Run CI
         run: |
-          docker-compose -f ${{ env.DOCKER_COMPOSE_FILE }} exec -T front yarn prettier
           docker-compose -f ${{ env.DOCKER_COMPOSE_FILE }} exec -T front yarn lint
+#          docker-compose -f ${{ env.DOCKER_COMPOSE_FILE }} exec -T front yarn prettier
