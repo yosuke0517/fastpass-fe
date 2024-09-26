@@ -1,5 +1,6 @@
-import Link from "next/link";
 import type { PropsWithChildren } from "react";
+import Link from "next/link";
+
 
 type Props = PropsWithChildren<{
   label: string;
@@ -8,6 +9,9 @@ type Props = PropsWithChildren<{
   filePath?: string;
 }>;
 
+/**
+ * Boundary
+ */
 export function Boundary({ label, bg, textCenter, filePath, children }: Props) {
   return (
     <div
