@@ -37,13 +37,13 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 
-#RUN groupadd -r nodejs &&  \
-#    useradd -r -u 1001 -g nodejs nextjs
-#
-#COPY --from=builder /app/public ./public
-#COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+RUN groupadd -r nodejs &&  \
+    useradd -r -u 1001 -g nodejs nextjs
 
-#USER nextjs
+COPY --from=builder /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+USER nextjs
 
 EXPOSE 3000
 
