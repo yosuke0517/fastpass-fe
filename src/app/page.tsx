@@ -8,10 +8,10 @@ export default function Page() {
     <main>
       <div className='flex'>
         <p>topです</p>
-        <Suspense fallback={<CircularProgress />}>
-          <TodoList />
-        </Suspense>
-        <TodoList2 />
+        {/*<Suspense fallback={<CircularProgress />}>*/}
+        {/*  <TodoList />*/}
+        {/*</Suspense>*/}
+        {/*<TodoList2 />*/}
       </div>
     </main>
   );
