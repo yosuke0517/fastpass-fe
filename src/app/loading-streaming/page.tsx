@@ -11,7 +11,7 @@ export default function Page() {
       <Suspense fallback={<Loading />}>
         <Left />
       </Suspense>
-      <Boundary label="Right">hi!!</Boundary>
+      <Boundary label="Right">hi!</Boundary>
     </div>
   );
 }
