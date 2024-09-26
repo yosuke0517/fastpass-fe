@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import { Loading } from '@/app/_components/Loading'
 import { Boundary } from '@/app/_components/Boundary'
+import { Loading } from '@/app/_components/Loading'
 
 // turn off full route cache for demo
 export const dynamic = "force-dynamic";

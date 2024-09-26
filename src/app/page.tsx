@@ -1,7 +1,7 @@
-import { Suspense } from 'react';
-import CircularProgress from '@mui/material/CircularProgress';
-import { TodoList } from '@/app/_components/TodoList';
-import { TodoList2 } from '@/app/_components/TodoList2';
+// import { Suspense } from 'react';
+// import CircularProgress from '@mui/material/CircularProgress';
+// import { TodoList } from '@/app/_components/TodoList';
+// import { TodoList2 } from '@/app/_components/TodoList2';
 
 export default function Page() {
   return (
