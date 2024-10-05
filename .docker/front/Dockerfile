@@ -1,5 +1,5 @@
 # 開発環境
-FROM node:20.12.2-bullseye-slim AS dev
+FROM node:20.18.0-bullseye-slim AS dev
 
 WORKDIR /app
 
@@ -13,7 +13,7 @@ RUN apt-get update && \
 COPY ./src/ /app
 
 # ベースイメージ
-FROM node:20.12.2-bullseye-slim AS base
+FROM node:20.18.0-bullseye-slim AS base
 
 # ビルド環境
 FROM base AS builder
